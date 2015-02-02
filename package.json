@@ -1,0 +1,15 @@
+{
+  "name": "wls-trade-server",
+  "version": "1.0.0",
+  "description": "Demo trade server",
+  "main": "trade-server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Woody Lewis",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.10.2",
+    "socket.io": "^1.3.2"
+  }
+}
