@@ -6,7 +6,7 @@ var trade = require("./trade");
 io.on('connection', function(socket) {
 	var theStr = 'SERVER RESPONSE';
 
- 	setInterval(trade.send, 10000, io, 'client_request', 'THERE');
+ 	trade.send(io, 'client_request', '2000000');
 /*
 	socket.on('client_request', function(msg){
 		io.emit('client_request', msg);
