@@ -2,3 +2,4 @@ node_modules
 app.err
 app.out
 npm-debug.log
+.DS_Store
