@@ -14,15 +14,9 @@ io.on('connection', function(socket) {
 	});
 
 	socket.on('buy', function(msg){
-		if(portfolio.cashPosition != 0) {
 			portfolio.cashPosition -= tranche;
 			portfolio.cash();
 			console.log('buy', msg);
-		}
-		else {
-			portfolio.noCash();
-			console.log('no cash');
-		}
 	});
 
 	socket.on('sell', function(msg){

@@ -15,10 +15,6 @@ Portfolio.prototype = {
 
 	cash: function() {
 		this.connection.emit('cash', this.cashPosition);
-	},
-
-	noCash: function() {
-		this.connection.emit('noCash', this.cashPosition);
 	}
 };
 
