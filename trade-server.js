@@ -10,7 +10,6 @@ io.on('connection', function(socket) {
 	var portfolio = new Portfolio(io, cashPosition);
 
 	socket.on('init', function(msg){
-		console.log('init', msg);
 		portfolio.init();
 	});
 
@@ -24,6 +23,12 @@ io.on('connection', function(socket) {
 			portfolio.noCash();
 			console.log('no cash');
 		}
+	});
+
+	socket.on('sell', function(msg){
+			portfolio.cashPosition += tranche;
+			portfolio.cash();
+			console.log('sell', msg);
 	});
 });
 
