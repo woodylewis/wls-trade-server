@@ -24,6 +24,10 @@ io.on('connection', function(socket) {
 			portfolio.cash();
 			console.log('sell', msg);
 	});
+	
+	socket.on('reset', function(msg){
+		portfolio.reset();
+	});	
 });
 
 http.listen(3500, function(){

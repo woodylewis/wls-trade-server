@@ -13,6 +13,11 @@ Portfolio.prototype = {
 		this.connection.emit('init', this.cashPosition);
 	},
 
+	reset: function() {
+		this.cashPosition = 1000000;
+		this.connection.emit('reset', this.cashPosition);
+	},
+
 	cash: function() {
 		this.connection.emit('cash', this.cashPosition);
 	}
