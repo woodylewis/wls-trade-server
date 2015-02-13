@@ -7,6 +7,3 @@ npm install --save socket.io
 ```
 bower install angular-socket-io
 ```
-```
-node index.js
-```
